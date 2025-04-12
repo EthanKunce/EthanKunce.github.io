@@ -1,0 +1,313 @@
+body {
+    background-color: #f9f5DD;
+    font-family: Inconsolata, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    color: #232323;
+}
+
+#wrap {
+    /* margin: 0 auto; */
+}
+
+header {
+    display: flex;
+    padding-top: 6%
+}
+
+nav {
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0% 6%;
+}
+
+nav ul {
+    text-align: right;
+    list-style: none;
+    /* padding-right: 12%; */
+    padding-left: 0;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+nav li {
+    margin-right: 20%;
+    font-size: 1.4em;
+    white-space: nowrap;
+    padding: 2% 0%;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #232323;
+}
+
+h1 {
+    margin-top: 0;
+    padding-left: 6%;
+}
+
+/* a[href="Project1.html"]:hover {
+    width: 0;
+    color:#AA7DFC;
+} */
+nav a[href="index.html"]:hover>li {
+    width: 0;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #AA7DFC;
+
+    /* background-color: #232323; */
+}
+
+nav a[href="workExperience.html"]:hover>li {
+    width: 0;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #ff5794;
+}
+
+nav a[href="SoftwareProjects.html"]:hover li {
+    width: 4%;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #FAA23D;
+}
+
+nav a[href="ITProjects.html"]:hover>li {
+    width: 0;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #b2E64C;
+}
+
+nav a[href="Files/Ethan Kunce Resume Sep 2024.pdf"]:hover>li {
+    width: 0;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #66cce1;
+}
+
+nav a[href="mailto:ethan@kunce.ca"]:hover>li {
+    width: 0;
+    font-weight: 400;
+    text-shadow: 0 0 1px #232323;
+    color: #5596f1;
+}
+
+aside {
+    right: -10;
+    /* top: 70%; */
+    width: 15%;
+    height: auto;
+    position: fixed;
+    /* background-color: #ffffff; */
+    /* background-color: #f9f5DD; */
+
+}
+
+aside img {
+    width: 90%;
+    object-fit: contain;
+}
+
+/* section {
+    margin-bottom: 10%;
+} */
+
+h2, h3, h4 {
+    background-color: #171717;
+
+    color: #AA7DFC;
+    /* margin-bottom: 0; */
+    margin: 0 auto;
+    padding: 0 6%;
+    padding-bottom: 1%;
+    text-shadow: 2px 2px black;
+}
+
+section h3 {
+    color: #ff5794;
+    padding: 0 10%;
+    padding-bottom: 1%;
+
+}
+
+
+section h4 {
+    color: #e6db7a;
+    padding: 0 13%;
+    padding-bottom: 1%;
+
+}
+
+section ul {
+    /* list-style: inside none; */
+    list-style-type: ">";
+    /* background-size: contain; */
+    /* margin-left: 3%; */
+    padding: 0 3%;
+}
+
+
+
+section li {
+    margin: 2% 0;
+    padding-left: 3%;
+    /* magin */
+}
+
+section li:first-child {
+    margin-top: 0;
+}
+
+
+section p {
+    font-size: 0.8em;
+    padding: 0 8%;
+}
+
+.date {
+    text-align: right;
+    font-weight: 600;
+}
+
+Section a {
+    text-decoration: none;
+}
+
+section h2 a {
+    background-color: #171717;
+
+    color: #AA7DFC;
+    /* margin-bottom: 0; */
+    margin: 0 auto;
+    /* padding: 1% 6%; */
+    padding-bottom: 1%;
+    text-shadow: 2px 2px black;
+}
+
+section img {
+    width: 100%;
+    object-fit: contain;
+}
+
+section span {
+    font-weight: 800;
+}
+
+footer {
+    background-color: #232323;
+    padding: 4% 6%;
+}
+
+footer ul {
+    margin: 0 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer a[href="https://x.com/lunctus_stamus"] {
+    color: #AA7DFC;
+}
+
+footer a[href="https://www.instagram.com/_kunce/"] {
+    color: #ff5794;
+}
+
+footer a[href="https://github.com/EthanKunce"] {
+    color: #FAA23D;
+}
+
+footer a[href="https://www.linkedin.com/in/ethan-kunce/"] {
+    color: #5596f1;
+}
+
+
+@media screen and (min-width: 480px) {
+
+    #wrap {
+        /* margin: 0 auto; */
+        /* display: flex; */
+        margin-left: 160px;
+        /* padding-left: 148px; */
+    }
+
+    header {
+        background-color: #232323;
+        position: fixed;
+        flex-direction: column;
+        margin: 0 0;
+        /* top: 0; */
+        height: 100%;
+        width: auto;
+        padding: 10px;
+        font-size: .8em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    nav li {
+        font-size: .8em;
+        color: #fff;
+        width: 4%;
+    }
+
+
+    nav a[href="index.html"]:hover>li { width: 100%; }
+
+    nav a[href="workExperience.html"]:hover>li { width: 100%; }
+
+    nav a[href="SoftwareProjects.html"]:hover li { width: 100%; }
+
+    nav a[href="ITProjects.html"]:hover>li { width: 100%; }
+
+    nav a[href="Files/Ethan Kunce Resume Sep 2024.pdf"]:hover>li { width: 100%;}
+
+    nav a[href="mailto:ethan@kunce.ca"]:hover>li { width: 100%; }
+
+    header h1 {
+        color: #AA7DFC;
+        text-align: center;
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #wrap {
+        margin: 0 auto;
+        /* display: flex; */
+        /* margin-left: 176px;     */
+        padding-left: 8px;
+    }
+
+    header {
+        position: fixed;
+        background-color: #232323;
+        margin: 0 auto;
+        height: 100%;
+        top: 0;
+        width: auto;
+        padding: 8px;
+    }
+
+    header h1 {
+        color: #AA7DFC;
+        text-align: center;
+
+    }
+}
