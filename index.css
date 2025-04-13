@@ -11,6 +11,7 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     padding-top: 6%
 }
 
@@ -121,25 +122,28 @@ h2, h3, h4 {
 
     color: #AA7DFC;
     /* margin-bottom: 0; */
-    margin: 0 auto;
-    padding: 0 6%;
+    margin: 0 0;
+    /* padding is chose over margin in order to to space text and keep the background colo */
+    padding: 0 4%;
     padding-bottom: 1%;
     text-shadow: 2px 2px black;
 }
 
 section h3 {
     color: #ff5794;
-    padding: 0 10%;
+    padding: 0 0%;
+    margin: 0 0;
+    padding-left: 8%;
     padding-bottom: 1%;
-
 }
 
 
 section h4 {
     color: #e6db7a;
-    padding: 0 13%;
+    margin: 0 0;
+    padding: 0 0%;
+    padding-left: 11%;
     padding-bottom: 1%;
-
 }
 
 section ul {
@@ -231,57 +235,40 @@ footer a[href="https://www.linkedin.com/in/ethan-kunce/"] {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 425px) {
 
     #wrap {
-        /* margin: 0 auto; */
-        /* display: flex; */
-        margin-left: 160px;
-        /* padding-left: 148px; */
-    }
-
-    header {
-        background-color: #232323;
-        position: fixed;
-        flex-direction: column;
-        margin: 0 0;
-        /* top: 0; */
-        height: 100%;
-        width: auto;
-        padding: 10px;
-        font-size: .8em;
-    }
-
-    nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        margin: 0 10%;
+        gap: 16px;
+        
     }
 
-
-    nav li {
-        font-size: .8em;
-        color: #fff;
-        width: 4%;
+    aside {
+        right: -25px;
+    }
+    
+    section {
+        /* border: 1px solid black; */
+        /* border-radius: 3%; */
+        background-color: #0c0c0c;
+        border: 2px solid #8c8c8c;
+        border-radius: 1%;
+        color:#fff
     }
 
+    section p {
+        margin: 2% 6%;
+        padding: 0 0;
+    }
 
-    nav a[href="index.html"]:hover>li { width: 100%; }
+    .languages {
+        text-align: right;
+    }
 
-    nav a[href="workExperience.html"]:hover>li { width: 100%; }
-
-    nav a[href="SoftwareProjects.html"]:hover li { width: 100%; }
-
-    nav a[href="ITProjects.html"]:hover>li { width: 100%; }
-
-    nav a[href="Files/Ethan Kunce Resume Sep 2024.pdf"]:hover>li { width: 100%;}
-
-    nav a[href="mailto:ethan@kunce.ca"]:hover>li { width: 100%; }
-
-    header h1 {
-        color: #AA7DFC;
-        text-align: center;
-        padding-left: 0;
+    footer {
+        margin-top: 16px;
     }
 
 }
@@ -289,25 +276,69 @@ footer a[href="https://www.linkedin.com/in/ethan-kunce/"] {
 @media screen and (min-width: 768px) {
 
     #wrap {
-        margin: 0 auto;
-        /* display: flex; */
-        /* margin-left: 176px;     */
-        padding-left: 8px;
+        margin-left: 16px;
+        width: 80%;
     }
 
-    header {
-        position: fixed;
+    nav {
+        color: #fff;
         background-color: #232323;
-        margin: 0 auto;
+        padding: 0 0;
+        /* padding-bottom: 10%; */
+        padding-right: 2%;
         height: 100%;
         top: 0;
-        width: auto;
-        padding: 8px;
+        /* margin: 2% 0; */
+        margin-right: 0;
+        position: fixed;
+        right: 0;
+        width: 15%;
+        font-size: .9em;
+        white-space: wrap;
+        text-wrap: wrap;
+
+        display: flex;
+        flex-direction:column;
+        
+        /* justify-content: space-evenly; */
+        /* justify-content:space-between; */
+
     }
 
-    header h1 {
-        color: #AA7DFC;
-        text-align: center;
+    nav ul {
+        padding-right: 2%;
+    }
+    nav li {
+        margin: 25% 2%;
+        font-weight: 700;
+        text-shadow: 0 0 3px black;
 
+        color: #fff;
+        /* /* white-space: wrap; */
+    }
+
+    a[href="SoftwareProjects.html"] li {
+        text-wrap: wrap; 
+
+        white-space: wrap;
+
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .languages {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        width: 71%;
     }
 }
+
